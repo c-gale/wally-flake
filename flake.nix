@@ -14,9 +14,9 @@
         pname = "wally";
         version = "0.3.2";
 
-        nativeBuildInputs = [
-          pkgs.autoPatchelfHook
-          pkgs.unzip
+        nativeBuildInputs = with pkgs; [
+          autoPatchelfHook
+          unzip
         ];
 
         buildInputs = with pkgs; [
