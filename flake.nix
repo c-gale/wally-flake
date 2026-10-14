@@ -19,10 +19,10 @@
           pkgs.unzip
         ];
 
-        buildInputs = [
-        pkgs.zlib
-        pkgs.openssl_3
-        pkgs.libgcc
+        buildInputs = with pkgs; [
+          zlib
+          openssl
+          libgcc
         ];
 
         src = pkgs.fetchzip {
